@@ -4,3 +4,8 @@ version = "0.0.0"
 edition = "2024"
 
 [dependencies]
+async-trait = "0.1.89"
+komainu_domain = { git = "ssh://git@github.com/komainu-auth/domain.git", tag = "v0.2.0" }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt", "macros"] }
