@@ -1,6 +1,4 @@
-use komainu_domain::{Scope, error::OAuthError, request::AuthorizationRequest};
-
-use crate::driven::SessionId;
+use komainu_domain::{Scope, error::OAuthError, request::AuthorizationRequest, session::SessionId};
 
 /// Input object bundling a request to the authorization endpoint (RFC 6749 Section 3.1).
 ///
@@ -100,10 +98,7 @@ pub trait AuthorizationService {
 mod tests {
     use super::*;
     use komainu_domain::{
-        ResponseType,
-        client::ClientId,
-        error::OAuthErrorCode,
-        value_object::ValueObject,
+        ResponseType, client::ClientId, error::OAuthErrorCode, value_object::ValueObject,
     };
 
     fn client_id() -> ClientId {

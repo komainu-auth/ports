@@ -138,8 +138,8 @@ dependencies = [
 
 [[package]]
 name = "komainu_domain"
-version = "0.2.0"
-source = "git+ssh://git@github.com/komainu-auth/domain.git?tag=v0.2.0#f14b623458e502ca75b36147dd48bd2bbed5e3a9"
+version = "0.3.0"
+source = "git+ssh://git@github.com/komainu-auth/domain.git?tag=v0.3.0#e11c6b697646b8688fd3d06c297e3161ff39b08e"
 dependencies = [
  "subtle",
  "url",
